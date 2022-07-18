@@ -1,4 +1,5 @@
 from pyodide.http import pyfetch
+import asyncio
 
 endpoint = "https://www.geeksforgeeks.org/data-structures/"
 
