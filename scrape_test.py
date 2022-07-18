@@ -1,15 +1,10 @@
-import json
-from pyodide import to_js
-import js
-from js import Object
+from pyodide.http import pyfetch
 
-request_params = {
-    "method": "GET",
-}
-req = await js.fetch('geeksforgeeks.org/data-structures/', 
-    to_js(request_params, dict_converter=js.Object.fromEntries)
+endpoint = "https://www.geeksforgeeks.org/data-structures/"
+
+response = await pyfetch(
+    endpoint,
+    method="GET",
 )
-res = await req.json()
-stringResult = js.JSON.stringify(res)
-print("STRING RESULT: ", stringResult)
-print("FINISHED")
+
+print('FINISHED FETCH')
