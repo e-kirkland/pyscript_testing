@@ -26,7 +26,7 @@ async def request(url:str, method:str = "GET", body:Optional[str] = None,
     return response
   
 
-baseurl = "https://jsonplaceholder.typicode.com/"
+baseurl = "https://google.com/"
 
 # GET
 headers = {"Content-type": "application/json"}
