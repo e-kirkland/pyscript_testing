@@ -12,3 +12,4 @@ req = await js.fetch('geeksforgeeks.org/data-structures/',
 res = await req.json()
 stringResult = js.JSON.stringify(res)
 print("STRING RESULT: ", stringResult)
+print("FINISHED")
